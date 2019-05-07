@@ -1,3 +1,3 @@
 # WebAnimaties
 
-Hier staan al mijn doucmenten van het vak WebAnimaties.
+Hier staan al mijn documenten van het vak WebAnimaties.

@@ -1,4 +1,15 @@
 body{
   background-color: #a64624;
-  
+}
+
+.cls-1{
+  color: #94d31b;
+}
+
+.cls-1:hover{
+  fill: #FFFFFF;
+}
+
+g > .cls-4:hover{
+  fill: #94d31b;
 }
