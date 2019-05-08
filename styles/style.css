@@ -1,15 +1,150 @@
 body{
-  background-color: #a64624;
+  background-color: white;
 }
 
-.cls-1{
-  color: #94d31b;
+#poster{
+  width: 35em;
+  height: 43em;
+  background: #a64624;
+  position: absolute;
+  left: 50%;
+  top: 22em;
+  transform: translate(-50%, -50%);
+  z-index:1;
 }
 
-.cls-1:hover{
-  fill: #FFFFFF;
+/* Hoofd van het karakter */
+
+article#Hoofd_Character > svg:nth-child(1){
+    width: 13em;
+    height:20em;
+    fill:#91907f;
+    position: absolute;
+    top:4.5em;
+    left:38em;
+    z-index:2;
 }
 
-g > .cls-4:hover{
-  fill: #94d31b;
+#Oog_Binnen {
+  width: 3.4em;
+  height: 3.4em;
+  background:white;
+  border-radius: 50%;
+  position: absolute;
+  top:10.1em;
+  left: 45.1em;
+  z-index:3;
 }
+
+#Oog_Buiten{
+  width: 4.3em;
+  height: 4.3em;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top:9.65em;
+  left: 44.65em;
+  z-index:2;
+}
+
+ #Mond_Buiten {
+   width: 2.5em;
+   height: 2.5em;
+   background: #e7643b;
+   border-radius: 50%;
+   position: absolute;
+   top:18em;
+   left: 41em;
+   z-index:2;
+ }
+
+ #Mond_Binnen{
+   width: 1.5em;
+   height: 1.5em;
+   background: white;
+   border-radius: 50%;
+   position: absolute;
+   top:18.5em;
+   left: 41.5em;
+   z-index:3;
+ }
+
+
+/* Jas */
+article#Jas > svg:nth-last-child(1){
+  width: 35em;
+  /* height:40em; */
+  fill:#1d110b;
+  position: absolute;
+  top:8.6em;
+  left:22.5em;
+  z-index:1;
+}
+
+/* Hoed */
+article#hoed > svg{
+  width: 20em;
+  height:20em;
+  fill:#2a1c18;
+  position: absolute;
+  top:-8em;
+  left: 35.1em;
+  z-index:2;
+}
+
+
+/* Hand en sigaret  */
+
+article#Hand_Sigaret > svg:nth-child(1) {
+  width: 16em;
+  height: 10em;
+  top:26em;
+  left:30em;
+  z-index: 4;
+  position: absolute;
+  fill:#f26538;
+}
+
+article#Hand_Sigaret > svg:nth-child(2) {
+  width: 5.5em;
+  height:12em;
+  top:28.5em;
+  left:39em;
+  z-index: 7;
+  position: absolute;
+  fill:#eeefdc;
+}
+
+
+ #Brandpunt{
+   width: 1.4em;
+   height: 1.4em;
+   background: #f16c29;
+   border-radius: 50%;
+   top:38.9em;
+   left:40.3em;
+   z-index: 8;
+   position: absolute;
+ }
+
+ /* muur */
+#muur {
+   /* height: 10em; */
+   width: 14.1em;
+   z-index:6;
+   position: absolute;
+   top:0.3em;
+   left:44.5em;
+}
+
+
+ /* article#text > svg{
+   height:7em;
+   fill:#f0edde;
+   top:59em;
+   width:80em;
+   left:-12em;
+   z-index: 1;
+   position: absolute;
+
+ } */
