@@ -81,6 +81,16 @@ article#Jas > svg:nth-last-child(1){
   z-index:1;
 }
 
+/* Rook mond */
+article#rook_mond > svg{
+  width: 20em;
+  fill:#fff;
+  position: absolute;
+  top:18em;
+  left:42em;
+  z-index: 8;
+}
+
 /* Hoed */
 article#hoed > svg{
   width: 20em;
@@ -107,8 +117,8 @@ article#Hand_Sigaret > svg:nth-child(1) {
 
 article#Hand_Sigaret > svg:nth-child(2) {
   width: 5.5em;
-  height:12em;
-  top:28.5em;
+  height: 9em;
+  top: 29.1em;
   left:39em;
   z-index: 7;
   position: absolute;
@@ -117,15 +127,35 @@ article#Hand_Sigaret > svg:nth-child(2) {
 
 
  #Brandpunt{
-   width: 1.4em;
-   height: 1.4em;
-   background: #f16c29;
-   border-radius: 50%;
-   top:38.9em;
-   left:40.3em;
-   z-index: 8;
-   position: absolute;
+   width: 1.1em;
+  height: 1.1em;
+  background: #f16c29;
+  border-radius: 50%;
+  top: 36.8em;
+  left: 40.65em;
+  z-index: 8;
+  position: absolute;
  }
+
+/* Rook sigaret */
+article#rook_sigaret > svg:nth-child(1){
+  width: 1em;
+  fill: #ccc;
+  position: absolute;
+  top: 32.5em;
+  left: 40.5em;
+  z-index: 9;
+}
+
+article#rook_sigaret > svg:nth-child(2){
+  width: 2.8em;
+  fill: #fff;
+  position: absolute;
+  top: -16.2em;
+  left: 38.6em;
+  z-index: 8;
+}
+
 
  /* muur */
 #muur {
@@ -138,13 +168,12 @@ article#Hand_Sigaret > svg:nth-child(2) {
 }
 
 
- /* article#text > svg{
-   height:7em;
+ article#text > svg{
+   height:4.7em;
    fill:#f0edde;
-   top:59em;
+   top:39em;
    width:80em;
-   left:-12em;
-   z-index: 1;
+   z-index: 9;
    position: absolute;
 
- } */
+ }
