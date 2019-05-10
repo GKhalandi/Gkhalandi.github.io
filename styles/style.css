@@ -2,6 +2,7 @@ body{
   background-color: white;
 }
 
+/* Desktop */
 #poster{
   width: 35em;
   height: 43em;
@@ -16,23 +17,19 @@ body{
 /* Hoofd van het karakter */
 
 article#Hoofd_Character > svg:nth-child(1){
-    width: 13em;
-    height:20em;
+    transform: scale(0.17) translate(29%, -210%);
     fill:#91907f;
     position: absolute;
-    top:4.5em;
-    left:38em;
     z-index:2;
 }
 
 #Oog_Binnen {
   width: 3.4em;
   height: 3.4em;
+  transform: translate(44.6em, 9.55em);
   background:white;
   border-radius: 50%;
   position: absolute;
-  top:10.1em;
-  left: 45.1em;
   z-index:3;
 }
 
@@ -42,8 +39,7 @@ article#Hoofd_Character > svg:nth-child(1){
   background: black;
   border-radius: 50%;
   position: absolute;
-  top:9.65em;
-  left: 44.65em;
+  transform: translate(44.1em, 9.1em);
   z-index:2;
 }
 
@@ -53,8 +49,7 @@ article#Hoofd_Character > svg:nth-child(1){
    background: #e7643b;
    border-radius: 50%;
    position: absolute;
-   top:18em;
-   left: 41em;
+   transform: translate(40.5em, 17.5em);
    z-index:2;
  }
 
@@ -64,41 +59,32 @@ article#Hoofd_Character > svg:nth-child(1){
    background: white;
    border-radius: 50%;
    position: absolute;
-   top:18.5em;
-   left: 41.5em;
+   transform: translate(41em, 17.97em);
    z-index:3;
  }
 
 
 /* Jas */
 article#Jas > svg:nth-last-child(1){
-  width: 35em;
-  /* height:40em; */
   fill:#1d110b;
   position: absolute;
-  top:8.6em;
-  left:22.5em;
+  transform: scale(0.4) translate(-6%, -37%);
   z-index:1;
 }
 
 /* Rook mond */
 article#rook_mond > svg{
-  width: 20em;
   fill:#fff;
   position: absolute;
-  top:18em;
-  left:42em;
+  transform: scale(0.3) translate(46em, 48.5em);
   z-index: 8;
 }
 
 /* Hoed */
 article#hoed > svg{
-  width: 20em;
-  height:20em;
   fill:#2a1c18;
   position: absolute;
-  top:-8em;
-  left: 35.1em;
+  transform: scale(0.25) translate(18em, -103em);
   z-index:2;
 }
 
@@ -106,11 +92,8 @@ article#hoed > svg{
 /* Hand en sigaret  */
 
 article#Hand_Sigaret > svg:nth-child(1) {
-  width: 16em;
-  height: 10em;
-  top:26em;
-  left:30em;
-  z-index: 4;
+  transform: scale(0.20) translate(-6em, 45em);
+  z-index: 6;
   position: absolute;
   fill:#f26538;
 }
@@ -118,8 +101,9 @@ article#Hand_Sigaret > svg:nth-child(1) {
 article#Hand_Sigaret > svg:nth-child(2) {
   width: 5.5em;
   height: 9em;
-  top: 29.1em;
+  top: 27.6em;
   left:39em;
+  /* transform: scale(0.03) translate(100em, -700em); */
   z-index: 7;
   position: absolute;
   fill:#eeefdc;
@@ -127,12 +111,11 @@ article#Hand_Sigaret > svg:nth-child(2) {
 
 
  #Brandpunt{
-   width: 1.1em;
-  height: 1.1em;
+  width: 1em;
+  height: 1em;
   background: #f16c29;
   border-radius: 50%;
-  top: 36.8em;
-  left: 40.65em;
+  transform: translate(40.2em, 34.8em);
   z-index: 8;
   position: absolute;
  }
@@ -140,9 +123,10 @@ article#Hand_Sigaret > svg:nth-child(2) {
 /* Rook sigaret */
 article#rook_sigaret > svg:nth-child(1){
   width: 1em;
+  /* transform: scale(0.01) translate(-90em, -10em); */
   fill: #ccc;
   position: absolute;
-  top: 32.5em;
+  top: 31.3em;
   left: 40.5em;
   z-index: 9;
 }
@@ -151,7 +135,7 @@ article#rook_sigaret > svg:nth-child(2){
   width: 2.8em;
   fill: #fff;
   position: absolute;
-  top: -16.2em;
+  top: -17.2em;
   left: 38.6em;
   z-index: 8;
 }
@@ -159,12 +143,13 @@ article#rook_sigaret > svg:nth-child(2){
 
  /* muur */
 #muur {
-   /* height: 10em; */
+   height: 10em;
    width: 14.1em;
    z-index:6;
    position: absolute;
    top:0.3em;
    left:44.5em;
+   /* transform: scale(0.2) translate(-40em, 30em); */
 }
 
 
