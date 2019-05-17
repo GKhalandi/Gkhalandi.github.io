@@ -109,7 +109,7 @@ article#Hand_Sigaret > svg:nth-child(1) {
   cursor: pointer;
 }
 
-/* Hand gaat naar de mond */
+/* Hand gaat naar de mond, code van een site */
 
 .killmeplease {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) 1;
@@ -182,23 +182,32 @@ article#rook_sigaret > svg:nth-child(2){
 
 
 
- /* muur */
+ /* muur  opzij zetten*/
 #muur{
   z-index: 9;
-   position: absolute;
-   height: 10em;
+  position: absolute;
+  height: 10em;
   width: 14.1em;
   top:0.3em;
   left:44.5em;
+  opacity: 1;
+  cursor: pointer;
 }
 
-/* article#text > svg{
-  height:4.4em;
-  top:37em;
-  width:47em;
-  z-index: 30;
-  fill:#f0edde;
-} */
+.weg{
+  animation: schuiven 2s linear alternate;
+}
+
+@keyframes schuiven {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10em, 0);
+  }
+}
+
 
  article#text > svg{
    height:4.7em;
@@ -210,6 +219,7 @@ article#rook_sigaret > svg:nth-child(2){
 
  }
 
+/* Het verkleuren van de letter m naar rood */
  article#text > svg > g#Modiano > path#_letter_M.cls-6{
    cursor:pointer;
  }
