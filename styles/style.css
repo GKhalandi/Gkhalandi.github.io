@@ -112,25 +112,25 @@ article#Hand_Sigaret > svg:nth-child(1) {
 /* Hand gaat naar de mond, code van een site */
 
 .killmeplease {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) 1;
+  animation: inhaleren 1.8s cubic-bezier(.36,.07,.19,.97) 1;
 
 }
 
-@keyframes shake {
+@keyframes inhaleren {
   10%, 90% {
-    transform:scale(0.20) translate(-0.01em, 0);
+    transform:scale(0.2) translate(-0.07em, 0);
   }
 
   20%, 80% {
-    transform:scale(0.20) translate(0.02em, 0);
+    transform:scale(0.2) translate(0.08em, 0);
   }
 
   30%, 50%, 70% {
-    transform: scale(0.20) translate(-0.04em, 0);
+    transform: scale(0.2) translate(-0.09em, 0);
   }
 
   40%, 60% {
-    transform:scale(0.20) translate(0.04em, 0);
+    transform:scale(0.2) translate(0.09em, 0);
   }
 }
 
@@ -181,7 +181,6 @@ article#rook_sigaret > svg:nth-child(2){
 }
 
 
-
  /* muur  opzij zetten*/
 #muur{
   z-index: 9;
@@ -216,17 +215,43 @@ article#rook_sigaret > svg:nth-child(2){
    width:80em;
    z-index: 10;
    position: absolute;
+   cursor: pointer;
 
  }
 
 /* Het verkleuren van de letter m naar rood */
- article#text > svg > g#Modiano > path#_letter_M.cls-6{
-   cursor:pointer;
- }
 
-  .Mtoetsenbord{
-      fill:red;
+.Mtoetsenbord{
+    fill:Red;
     }
+
+.Otoetsenbord{
+    fill:Blue;
+}
+
+.O2toetsenbord{
+  fill:Blue;
+}
+
+.Dtoetsenbord{
+    fill:Red;
+}
+
+.Itoetsenbord{
+  fill:Blue;
+}
+
+.Atoetsenbord{
+  fill:Aqua;
+}
+.Ntoetsenbord{
+  fill:Pink;
+}
+
+
+
+
+
 }
 
 
