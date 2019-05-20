@@ -2,45 +2,40 @@ body{
   background: #a64624;
 }
 
+#test{
+  z-index: 100;
+  position: absolute;
+  width:110%;
+  height:110%;
+  background-color: darkgrey;
+  opacity: 0.7;
+  left:-100em;
+}
+
+.zandstorm{
+  animation: storm 7s;
+}
+
+@keyframes storm {
+  0%{
+    transform:translateX(-100em);
+  }
+  100%{
+    transform:translateX(200em);
+  }
+}
+
+
+
 /* Animatie inladen */
 
-svg{
-  animation: inladen 2.5s linear 1;
-}
-
-@keyframes inladen {
-   30%{
-     opacity: 0;
-   }
-   100%{
-     opacity: 1;
-   }
-}
-
-
-#Muur{
-  animation: slide-in 2s linear;
-}
-
-@keyframes slide-in {
-  0%{
-    transform: translate(100, 0);
-  }
-
-  100% {
-    transform: translate(0em, 0);
-  }
-}
-
-}
-
-#hoed{
-  animation: omlaag 2s linear 1;
+article#hoed{
+  animation: omlaag 3s linear 1;
 }
 
 @keyframes omlaag {
    0%{
-     transform:translateY(-20em);
+     transform:translateY(-200em);
      opacity: 0;
      z-index:8;
    }
@@ -52,26 +47,104 @@ svg{
 }
 
 
+svg{
+  animation: inladen 2.5s linear 1;
+  &:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  &:nth-child(4) {
+    animation-delay: 1.1s;
+  }
+}
+
+@keyframes inladen {
+   30%{
+     opacity: 0;
+   }
+   100%{
+     opacity: 1;
+   }
+}
+
+#csselementen{
+  animation: gezicht 2.5s linear 1;
+  &:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  &:nth-child(4) {
+    animation-delay: 1.1s;
+  }
+}
+
+@keyframes gezicht{
+  10%{
+    opacity:0.1;
+    transform: scale(1.05);
+  }
+  50%{
+    opacity:0.6;
+    transform: scale(1);
+  }
+  100%{
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+#Gekkemuur{
+  animation: slide-in 2s linear;
+}
+
+@keyframes slide-in {
+  0%{
+    transform: translateX(100em);
+  }
+
+  100% {
+    transform: translateX(0em);
+  }
+}
+}
+
+
+
 /* Animatie */
 
 
 /* Hand gaat naar de mond, code van een site */
 
-.schudden {
+.roken {
   animation: omhoog 1.8s linear;
 }
 
 @keyframes omhoog {
-  0% {
-    transform: translateY(0em);
+  0%{
+    transition: translate(0em, 0em);
+    transition-duration: 0.4s;
   }
   50%{
-    transform: translateY(10em);
+      transition: translateY(0em, 20em);
+      transition-duration: 1s;
   }
   100%{
-      transform: translateY(0em);
+      transition: translateY(0em, 0em);
+      transition-duration: 0.4s;
   }
-
 
 }
 
@@ -85,8 +158,6 @@ svg{
    z-index: 10;
    position: absolute;
    cursor: pointer;
-   transition: 1.2s;
-   transition-timing-function: ease-out;
  }
 
 /* Het verkleuren van de letter m naar rood */
@@ -155,14 +226,12 @@ article#Hoofd_Character > svg:nth-child(1){
   background: white;
   border-radius: 50%;
   position: absolute;
-  z-index:20;
-  transition: 1s ease ;
+  z-index:200;
   cursor: pointer;
 }
 
 #Oog_Binnen:hover{
-  border-radius: 50%;
-  border-bottom:10px solid currentColor;
+  color:red;
 
 }
 
@@ -281,7 +350,7 @@ article#rook_sigaret > svg:nth-child(2){
 #muur{
   z-index: 9;
   position: absolute;
-  height: 10em;
+  height: 50em;
   width: 50.5em;
   top:-2em;
   right:0em;
@@ -295,11 +364,11 @@ article#rook_sigaret > svg:nth-child(2){
 
 @keyframes schuiven {
   0%, 100% {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
 
   50% {
-    transform: translate(10em, 0);
+    transform: translateX(10em);
   }
 }
 
