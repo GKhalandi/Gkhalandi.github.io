@@ -1,19 +1,143 @@
 body{
-  background-color: white;
+  background: #a64624;
 }
 
-@media (max-width: 779em) {
-/* Desktop */
-#poster{
-  width: 35em;
-  height: 43em;
-  background: #a64624;
-  position: absolute;
-  left: 50%;
-  top: 22em;
-  transform: translate(-50%, -50%);
-  z-index:1;
+/* Animatie inladen */
+
+svg{
+  animation: inladen 2.5s linear 1;
 }
+
+@keyframes inladen {
+   30%{
+     opacity: 0;
+   }
+   100%{
+     opacity: 1;
+   }
+}
+
+
+#Muur{
+  animation: slide-in 2s linear;
+}
+
+@keyframes slide-in {
+  0%{
+    transform: translate(100, 0);
+  }
+
+  100% {
+    transform: translate(0em, 0);
+  }
+}
+
+}
+
+#hoed{
+  animation: omlaag 2s linear 1;
+}
+
+@keyframes omlaag {
+   0%{
+     transform:translateY(-20em);
+     opacity: 0;
+     z-index:8;
+   }
+   100%{
+     transform:translateY(0em);
+     opacity: 1;
+     z-index:8;
+   }
+}
+
+
+/* Animatie */
+
+
+/* Hand gaat naar de mond, code van een site */
+
+.schudden {
+  animation: omhoog 1.8s linear;
+}
+
+@keyframes omhoog {
+  0% {
+    transform: translateY(0em);
+  }
+  50%{
+    transform: translateY(10em);
+  }
+  100%{
+      transform: translateY(0em);
+  }
+
+
+}
+
+
+
+ article#text > svg{
+   height:4.7em;
+   fill:#f0edde !important;
+   top:39em;
+   width:80em;
+   z-index: 10;
+   position: absolute;
+   cursor: pointer;
+   transition: 1.2s;
+   transition-timing-function: ease-out;
+ }
+
+/* Het verkleuren van de letter m naar rood */
+/* Bron: janne jansen */
+
+.Mtoetsenbord{
+    fill:Red;
+    transition: 1.2s;
+    transition-timing-function: ease-in;
+    }
+
+.Otoetsenbord{
+    fill:Blue;
+    transition: 1.2s;
+    transition-timing-function: ease-in;
+}
+
+.O2toetsenbord{
+  fill:Blue;
+  transition: 1.2s;
+  transition-timing-function: ease-in;
+}
+
+.Dtoetsenbord{
+    fill:Red !important;
+    transition: 1.2s;
+    transition-timing-function: ease-in;
+}
+
+.Itoetsenbord{
+  fill:Blue !important;
+  transition: 1.2s;
+  transition-timing-function: ease-in;
+}
+
+.Atoetsenbord{
+  fill:Aqua !important;
+  transition: 1.2s;
+  transition-timing-function: ease-in;
+}
+.Ntoetsenbord{
+  fill:Pink;
+  transition: 1.2s;
+  transition-timing-function: ease-in;
+}
+
+
+
+
+
+@media (max-width: 779em) {
 
 /* Hoofd van het karakter */
 
@@ -109,30 +233,6 @@ article#Hand_Sigaret > svg:nth-child(1) {
   cursor: pointer;
 }
 
-/* Hand gaat naar de mond, code van een site */
-
-.killmeplease {
-  animation: inhaleren 1.8s cubic-bezier(.36,.07,.19,.97) 1;
-
-}
-
-@keyframes inhaleren {
-  10%, 90% {
-    transform:scale(0.2) translate(-0.07em, 0);
-  }
-
-  20%, 80% {
-    transform:scale(0.2) translate(0.08em, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: scale(0.2) translate(-0.09em, 0);
-  }
-
-  40%, 60% {
-    transform:scale(0.2) translate(0.09em, 0);
-  }
-}
 
 article#Hand_Sigaret > svg:nth-child(2) {
   width: 5.5em;
@@ -145,10 +245,6 @@ article#Hand_Sigaret > svg:nth-child(2) {
   fill:#eeefdc;
 }
 
-/* Sigaret wordt kleiner? */
-/* article#Hand_Sigaret > svg:nth-child(2):hover {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) 1;
-} */
 
  #Brandpunt{
   width: 1em;
@@ -186,9 +282,9 @@ article#rook_sigaret > svg:nth-child(2){
   z-index: 9;
   position: absolute;
   height: 10em;
-  width: 14.1em;
-  top:0.3em;
-  left:44.5em;
+  width: 50.5em;
+  top:-2em;
+  right:0em;
   opacity: 1;
   cursor: pointer;
 }
@@ -207,51 +303,6 @@ article#rook_sigaret > svg:nth-child(2){
   }
 }
 
-
- article#text > svg{
-   height:4.7em;
-   fill:#f0edde;
-   top:39em;
-   width:80em;
-   z-index: 10;
-   position: absolute;
-   cursor: pointer;
-
- }
-
-/* Het verkleuren van de letter m naar rood */
-
-.Mtoetsenbord{
-    fill:Red;
-    }
-
-.Otoetsenbord{
-    fill:Blue;
-}
-
-.O2toetsenbord{
-  fill:Blue;
-}
-
-.Dtoetsenbord{
-    fill:Red;
-}
-
-.Itoetsenbord{
-  fill:Blue;
-}
-
-.Atoetsenbord{
-  fill:Aqua;
-}
-.Ntoetsenbord{
-  fill:Pink;
-}
-
-
-
-
-
 }
 
 
@@ -259,13 +310,6 @@ article#rook_sigaret > svg:nth-child(2){
 
 @media (max-width: 48em) {
 
-  #poster{
-    width: 35em;
-    height: 43em;
-    left: 50%;
-    top: 20em;
-    transform: translate(-50%, -50%);
-  }
 
   /* Hoofd van het karakter */
 
@@ -315,7 +359,7 @@ article#rook_sigaret > svg:nth-child(2){
   /* Hand en sigaret  */
 
   article#Hand_Sigaret > svg:nth-child(1) {
-    transform: scale(0.27) translate(-6em, 60em);
+    /* transform: scale(0.27) translate(-6em, 60em); */
     z-index: 12;
   }
 
@@ -374,10 +418,6 @@ and (max-device-width : 41.7em)
 and (orientation : portrait) {
 
 
-  #poster{
-    width: 23em;
-    height: 44em;
-  }
 
   /* Hoofd van het karakter */
 
