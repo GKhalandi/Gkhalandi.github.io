@@ -2,6 +2,7 @@ body{
   background: #a64624;
 }
 
+/* bron:  Niels */
 #test{
   z-index: 100;
   position: absolute;
@@ -128,24 +129,23 @@ svg{
 
 /* Hand gaat naar de mond, code van een site */
 
-.roken {
+#Hand_Sigaret.test123 {
   animation: omhoog 1.8s linear;
 }
 
 @keyframes omhoog {
   0%{
-    transition: translate(0em, 0em);
-    transition-duration: 0.4s;
+    transform:scale(0);
   }
-  50%{
-      transition: translateY(0em, 20em);
-      transition-duration: 1s;
+  10%{
+    transform:scale(0.5);
+  }
+  40%{
+    transform:scale(0.7);
   }
   100%{
-      transition: translateY(0em, 0em);
-      transition-duration: 0.4s;
+    transform:scale(1);
   }
-
 }
 
 
@@ -219,6 +219,7 @@ article#Hoofd_Character > svg:nth-child(1){
     z-index:2;
 }
 
+/* animatie ogen, animae character*/
 #Oog_Binnen{
   width: 3.4em;
   height: 3.4em;
@@ -228,11 +229,14 @@ article#Hoofd_Character > svg:nth-child(1){
   position: absolute;
   z-index:200;
   cursor: pointer;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
 
 #Oog_Binnen:hover{
-  color:red;
-
+  width: 2.5em;
+  height: 2.5em;
+  transform: translate(44.6em, 10.55em);
 }
 
 
@@ -295,24 +299,35 @@ article#hoed > svg{
 /* Hand en sigaret  */
 
 article#Hand_Sigaret > svg:nth-child(1) {
-  transform: scale(0.20) translate(-6em, 45em);
+  transform: scale(0.20) translate(-8em, 15em);
   z-index: 6;
   position: absolute;
-  fill:#f26538;
   cursor: pointer;
+}
+article#Hand_Sigaret > svg > path#Hand{
+  fill:#f26538;
+}
+
+article#Hand_Sigaret > svg > g#Sigaret{
+  fill:#eeefdc;
+}
+
+article#Hand_Sigaret > svg > #brandpunt{
+  fill:##f26538 !important;
 }
 
 
-article#Hand_Sigaret > svg:nth-child(2) {
+
+
+/* article#Hand_Sigaret > svg:nth-child(2) {
   width: 5.5em;
   height: 9em;
   top: 27.6em;
   left:39em;
-  /* transform: scale(0.03) translate(100em, -700em); */
   z-index: 7;
   position: absolute;
   fill:#eeefdc;
-}
+} */
 
 
  #Brandpunt{
@@ -350,12 +365,13 @@ article#rook_sigaret > svg:nth-child(2){
 #muur{
   z-index: 9;
   position: absolute;
-  height: 50em;
-  width: 50.5em;
+  height: 10em;
+  width: 100%;
   top:-2em;
-  right:0em;
+  right:-51.5%;
   opacity: 1;
   cursor: pointer;
+  fill: #4083b1;
 }
 
 .weg{
@@ -371,7 +387,6 @@ article#rook_sigaret > svg:nth-child(2){
     transform: translateX(10em);
   }
 }
-
 }
 
 
@@ -388,6 +403,12 @@ article#rook_sigaret > svg:nth-child(2){
 
   #Oog_Binnen {
     transform: translate(26.6em, 9.55em);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+
+  #Oog_Binnen:active {
+    transform: scale(0.9) translate(25em, 8.50em);
   }
 
   #Oog_Buiten{
@@ -428,7 +449,7 @@ article#rook_sigaret > svg:nth-child(2){
   /* Hand en sigaret  */
 
   article#Hand_Sigaret > svg:nth-child(1) {
-    /* transform: scale(0.27) translate(-6em, 60em); */
+    transform: scale(0.25) translate(-6em, 55em);
     z-index: 12;
   }
 
@@ -439,13 +460,6 @@ article#rook_sigaret > svg:nth-child(2){
     left:23em;
     z-index: 13;
   }
-
-   #Brandpunt{
-    width: 1em;
-    height: 1em;
-    transform: translate(23.96em, 34.2em);
-    z-index: 13;
-   }
 
   /* Rook sigaret */
   article#rook_sigaret > svg:nth-child(1){
@@ -464,10 +478,9 @@ article#rook_sigaret > svg:nth-child(2){
 
    /* muur */
   #muur{
-    height: 10em;
-    width: 16.1em;
-    top:-1em;
-    left:25.5em;
+    width: 50em;
+    top: -1em;
+    right: -29em;
   }
 
 
@@ -482,7 +495,7 @@ article#rook_sigaret > svg:nth-child(2){
 
 /* Iphone8 */
 @media only screen
-and (min-device-width : 23.4em)
+and (min-device-width : 22.4em)
 and (max-device-width : 41.7em)
 and (orientation : portrait) {
 
@@ -495,8 +508,15 @@ and (orientation : portrait) {
   }
 
   #Oog_Binnen {
-    transform: scale(0.8) translate(17em, 11.50em);
+    transform: scale(0.8)translate(17em, 11.50em);
+    transition-duration: 1s;
+    transition-timing-function: ease;
   }
+  #Oog_Binnen:active {
+    transform: scale(0.7) translate(16em, 10.50em);
+  }
+
+
 
   #Oog_Buiten{
     transform: scale(0.8)translate(16.5em, 11em);
@@ -560,8 +580,9 @@ and (orientation : portrait) {
 
    /* muur */
   #muur{
-    width: 14.1em;
-    left: 13em;
+    width: 42em;
+    top: 0em;
+    right: -32.5em;
   }
 
 

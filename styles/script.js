@@ -1,7 +1,7 @@
-var hand = document.querySelector('article#Hand_Sigaret > svg:nth-child(1)');
+var hand = document.querySelector('#Hand_Sigaret');
 
-hand.addEventListener('click', function(){
+hand.addEventListener('mouseover', function(){
 		console.log("man rookt sigarert");
-	     hand.classList.toggle('roken');
+	     hand.classList.toggle('test123');
 
 });
