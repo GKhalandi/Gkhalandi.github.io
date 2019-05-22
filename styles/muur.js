@@ -1,7 +1,8 @@
 var schuiven = document.querySelector('#muur');
 var storm = document.querySelector('#test');
+var kutmuur = document.querySelector('#Gekkemuur');
 
-document.addEventListener('click', function(){
+kutmuur.addEventListener('click', function(){
     console.log("muur schuift weg");
       schuiven.classList.toggle('weg');
 
