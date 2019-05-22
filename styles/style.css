@@ -14,6 +14,8 @@ body{
 }
 
 .zandstorm{
+  color:grey;
+  left:100em;
   animation: storm 7s;
 }
 
@@ -160,6 +162,10 @@ svg{
    cursor: pointer;
  }
 
+.cls-7,  .cls-8,  .cls-9 {
+   fill:#f0edde !important;
+ }
+
 /* Het verkleuren van de letter m naar rood */
 /* Bron: janne jansen */
 
@@ -291,7 +297,7 @@ article#rook_mond > svg{
 article#hoed > svg{
   fill:#2a1c18;
   position: absolute;
-  transform: scale(0.25) translate(18em, -103em);
+  transform: scale(0.26) translate(18em, -103em);
   z-index:3;
 }
 
@@ -312,8 +318,8 @@ article#Hand_Sigaret > svg > g#Sigaret{
   fill:#eeefdc;
 }
 
-article#Hand_Sigaret > svg > #brandpunt{
-  fill:##f26538 !important;
+article#Hand_Sigaret > svg > circle#brandpunt{
+  color:##f26538 !important;
 }
 
 
@@ -343,7 +349,7 @@ article#Hand_Sigaret > svg > #brandpunt{
 /* Rook sigaret */
 article#rook_sigaret > svg:nth-child(1){
   width: 1em;
-  fill: #fff;
+  fill:#ccc;
   position: absolute;
   top: 31.3em;
   left: 40.5em;
@@ -442,7 +448,7 @@ article#rook_sigaret > svg:nth-child(2){
 
   /* Hoed */
   article#hoed > svg{
-    transform: scale(0.40) translate(7.5em, -37em)
+    transform: scale(0.5) translate(7.5em, -37em)
   }
 
 
@@ -543,7 +549,7 @@ and (orientation : portrait) {
 
   /* Hoed */
   article#hoed > svg{
-    transform: scale(0.60) translate(4em, -7em);
+    transform: scale(0.67) translate(4.5em, -7em);
   }
 
 
@@ -590,6 +596,7 @@ and (orientation : portrait) {
      height: 4em;
      top: 33em;
      width: 22.5em;
+     fill:#f0edde !important;
    }
 
 }
