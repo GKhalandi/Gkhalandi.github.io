@@ -448,7 +448,7 @@ article#rook_sigaret > svg:nth-child(2){
 
   /* Hoed */
   article#hoed > svg{
-    transform: scale(0.5) translate(7.5em, -37em)
+    transform: scale(0.4) translate(7.5em, -37em)
   }
 
 
