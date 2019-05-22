@@ -56,7 +56,7 @@ document.addEventListener('keydown', function(event){
 
 
 // Tablet en telefoon
-madiano.addEventListener('mousedown', function(){
+madiano.addEventListener('dblclick', function(){
     mtoets.classList.toggle('Mtoetsenbord');
     otoets.classList.toggle('Otoetsenbord');
     o2toets.classList.toggle('O2toetsenbord');
