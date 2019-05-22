@@ -12,6 +12,9 @@ var atoets = document.querySelector('article#text > svg > g#Modiano > path#lette
 
 var ntoets = document.querySelector('article#text > svg > g#Modiano > g#letter_N >path.cls-12');
 
+var madiano = document.querySelector('article#text > svg > g#Modiano');
+
+
 
 
 // M wordt rood
@@ -53,29 +56,15 @@ document.addEventListener('keydown', function(event){
 
 
 // Tablet en telefoon
-Modiano.addEventListener('click', function(event){
-  if (event.code == 'mtoets') {
+madiano.addEventListener('mousedown', function(){
     mtoets.classList.toggle('Mtoetsenbord');
-  }
-  else if (event.code == 'otoets') {
     otoets.classList.toggle('Otoetsenbord');
-  }
-  else if (event.code == 'o2toets') {
     o2toets.classList.toggle('O2toetsenbord');
-  }
-  else if (event.code == 'itoets') {
     itoets.classList.toggle('Itoetsenbord');
-  }
-  else if (event.code == 'atoets') {
     atoets.classList.toggle('Atoetsenbord');
-  }
-  else if (event.code == 'ntoets') {
     ntoets.classList.toggle('Ntoetsenbord');
-  }
-  else if (event.code == 'dtoets') {
-    console.log("letter d wordt anders");
     dtoets.classList.toggle('Dtoetsenbord');
 
   }
 
-});
+);
