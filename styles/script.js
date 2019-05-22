@@ -1,6 +1,6 @@
-var hand = document.querySelector('#Hand_Sigaret');
+var hoed = document.querySelector('article#hoed');
 
-hand.addEventListener('mouseover', function(){
-			console.log("man rookt sigarert");
-	     hand.classList.toggle('test123');
+hoed.addEventListener('dblclick', function(){
+				console.log("man rookt sigarert");
+	     hoed.classList.toggle('animatieomlaag');
 });
