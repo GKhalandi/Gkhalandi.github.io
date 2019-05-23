@@ -16,8 +16,8 @@ document.addEventListener('keydown', function(event){
 
 });
 
-document.addEventListener('dblclick', function(){
-  console.log("man rookt sigarert");
+document.addEventListener('click', function(){
+  console.log("Zandstorm");
   storm.classList.toggle('zandstorm');
 
 });
