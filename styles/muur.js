@@ -16,8 +16,8 @@ document.addEventListener('keydown', function(event){
 
 });
 
-// document.addEventListener('click', function(){
-//   console.log("AUTLICHTEN");
-//   storm.classList.toggle('auto');
-//
-// });
+document.addEventListener('click', function(){
+  console.log("AUTLICHTEN");
+  storm.classList.toggle('auto');
+
+});
