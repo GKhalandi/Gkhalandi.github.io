@@ -333,9 +333,11 @@ article#hoed > svg{
 @keyframes koppijn {
   0% 100%{
     transform:translateY(0em);
+    z-index:4;
   }
    50%{
      transform:translateY(-20em);
+     z-index:4;
    }
 
 }
