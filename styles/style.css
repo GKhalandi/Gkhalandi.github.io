@@ -19,6 +19,10 @@ body{
   animation: storm 7s;
 }
 
+.zandstorm #Oog_Binnen{
+  color: pink;
+}
+
 @keyframes storm {
   0%{
     transform:translateX(-100em);
