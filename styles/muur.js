@@ -15,3 +15,9 @@ document.addEventListener('keydown', function(event){
 }
 
 });
+
+document.addEventListener('dblclick', function(){
+  console.log("man rookt sigarert");
+  storm.classList.toggle('zandstorm');
+
+});
