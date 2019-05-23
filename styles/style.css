@@ -1,3 +1,46 @@
+/*
+Bronnen:
+
+Docent:
+Danny de Vries
+
+Klasgenoten:
+Janne Jansen,
+Milou de Veen,
+Sam Hofman,
+Luca de Ruiter,
+Niels Evers
+Vasilis Gemert
+Daan Rongen
+
+
+CSS - Tricks
+https://css-tricks.com/animating-svg-css/
+https://css-tricks.com/pseudo-class-selectors/
+https://css-tricks.com/almanac/properties/a/animation/
+https://css-tricks.com/svg-line-animation-works/
+https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
+https://css-tricks.com/almanac/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://css-tricks.com/svg-line-animation-works/
+
+Developer Mozilla
+https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event
+https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+
+Anders
+http://stephen.io/mediaqueries/
+https://cubic-bezier.com/#.01,-0.46,.71,1.47
+https://www.gradient-animator.com/
+http://keycode.info/
+https://javascript.info/keyboard-events
+
+ */
+
+
+
 body{
   background: #a64624;
 }
@@ -53,7 +96,6 @@ article#hoed > svg > path#Hoed{
      z-index:8;
    }
 }
-
 
 svg{
   animation: inladen 2.5s linear 1;
@@ -330,18 +372,6 @@ article#text{
 }
 
 
-
-/* article#Hand_Sigaret > svg:nth-child(2) {
-  width: 5.5em;
-  height: 9em;
-  top: 27.6em;
-  left:39em;
-  z-index: 7;
-  position: absolute;
-  fill:#eeefdc;
-} */
-
-
  #Brandpunt{
   width: 1em;
   height: 1em;
@@ -506,6 +536,19 @@ article#rook_sigaret > svg:nth-child(2){
      z-index: 30;
      fill:#f0edde;
    }
+   .roken {
+     animation: omhoog 1.8s linear;
+     z-index: 200;
+   }
+
+   @keyframes omhoog {
+     0% 100%{
+       transform:translateY(0) rotate(0deg);
+
+     }
+     50%{
+       transform:translateY(-10em) rotate(-2deg);
+     }
 }
 
 /* Iphone8 */
@@ -608,5 +651,19 @@ and (orientation : portrait) {
      fill:#f0edde !important;
      transform: translate(-20em, -5em);
    }
+
+   .roken {
+     animation: omhoog 1.8s linear;
+     z-index: 200;
+   }
+
+   @keyframes omhoog {
+     0% 100%{
+       transform:translateY(0) rotate(0deg);
+
+     }
+     50%{
+       transform:translateY(-10em) rotate(-2deg);
+     }
 
 }
