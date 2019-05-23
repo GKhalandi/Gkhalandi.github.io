@@ -31,10 +31,10 @@ document.addEventListener('keydown', function(event){
     mtoets.classList.toggle('Mtoetsenbord');
   }
   else if (event.code == 'KeyO') {
-    otoets.classList.toggle('Otoetsenbord');
+    o2toets.classList.toggle('O2toetsenbord');
   }
   else if (event.code == 'KeyQ') {
-    o2toets.classList.toggle('O2toetsenbord');
+    otoets.classList.toggle('Otoetsenbord');
   }
   else if (event.code == 'KeyI') {
     itoets.classList.toggle('Itoetsenbord');

@@ -4,31 +4,32 @@ body{
 
 /* bron:  Niels */
 #test{
-  z-index: 100;
+  z-index:0;
   position: absolute;
   width:110%;
   height:110%;
-  background-color: darkgrey;
-  opacity: 0.7;
+  background-color: yellow;
+  opacity: 0.4;
   left:-100em;
 }
 
-.zandstorm{
-  color:grey;
-  left:100em;
-  animation: storm 7s;
+.auto{
+  left:150em;
+  height:100%;
+  animation: storm 5s ease 2;
 }
 
-.zandstorm #Oog_Binnen{
-  color: pink;
-}
 
 @keyframes storm {
   0%{
+    z-index:100;
     transform:translateX(-100em);
   }
+
   100%{
+    z-index:100;
     transform:translateX(200em);
+
   }
 }
 
@@ -36,7 +37,7 @@ body{
 
 /* Animatie inladen */
 
-article#hoed{
+article#hoed > svg > path#Hoed{
   animation: omlaag 3s linear 1;
 }
 
@@ -132,24 +133,6 @@ svg{
 
 /* Animatie */
 
-.animatieomlaag{
-  animation: toggle 4s linear 1;
-}
-
-@keyframes toggle {
-   0%{
-     transform:translateY(0em);
-   }
-   50% {
-     transform:translateY(-200em);
-   }
-   100%{
-     transform:translateY(0em);
-   }
-}
-
-
-
  article#text > svg{
    height:4.7em;
    fill:#f0edde !important;
@@ -168,37 +151,37 @@ svg{
 /* Bron: janne jansen */
 
 .Mtoetsenbord{
-    fill:Red;
+    fill:Pink;
     transition: 1.2s;
     transition-timing-function: ease-in;
     }
 
 .Otoetsenbord{
-    fill:Blue;
+    fill:Pink;
     transition: 1.2s;
     transition-timing-function: ease-in;
 }
 
 .O2toetsenbord{
-  fill:Blue;
+  fill:Pink;
   transition: 1.2s;
   transition-timing-function: ease-in;
 }
 
 .Dtoetsenbord{
-    fill:Red !important;
+    fill:Pink !important;
     transition: 1.2s;
     transition-timing-function: ease-in;
 }
 
 .Itoetsenbord{
-  fill:Blue !important;
+  fill:Pink !important;
   transition: 1.2s;
   transition-timing-function: ease-in;
 }
 
 .Atoetsenbord{
-  fill:Aqua !important;
+  fill:Pink !important;
   transition: 1.2s;
   transition-timing-function: ease-in;
 }
@@ -297,6 +280,21 @@ article#hoed > svg{
   position: absolute;
   transform: scale(0.26) translate(18em, -103em);
   z-index:3;
+  cursor:pointer;
+}
+
+.anders{
+  animation: koppijn 3s linear ;
+}
+
+@keyframes koppijn {
+  0% 100%{
+    transform:translateY(0em);
+  }
+   50%{
+     transform:translateY(-20em);
+   }
+
 }
 
 
@@ -320,6 +318,16 @@ article#Hand_Sigaret > svg > circle#brandpunt{
   color:##f26538 !important;
 }
 
+article#text{
+  /* height:4.7em; */
+  fill:#f0edde !important;
+  left:20em;
+  top:39em;
+  width:35em;
+  z-index: 10;
+  position: absolute;
+  cursor: pointer;
+}
 
 
 
@@ -377,6 +385,8 @@ article#rook_sigaret > svg:nth-child(2){
   cursor: pointer;
   fill: #4083b1;
 }
+
+
 
 .weg{
   animation: schuiven 2s linear alternate;

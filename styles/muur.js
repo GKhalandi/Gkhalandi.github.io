@@ -10,14 +10,14 @@ kutmuur.addEventListener('click', function(){
 
 document.addEventListener('keydown', function(event){
 	if (event.code == 'KeyS') {
-    console.log('zandstorm');
-	   storm.classList.toggle('zandstorm');
+    console.log('AUTOLICHTEN');
+	   storm.classList.toggle('auto');
 }
 
 });
 
-document.addEventListener('click', function(){
-  console.log("Zandstorm");
-  storm.classList.toggle('zandstorm');
-
-});
+// document.addEventListener('click', function(){
+//   console.log("AUTLICHTEN");
+//   storm.classList.toggle('auto');
+//
+// });
