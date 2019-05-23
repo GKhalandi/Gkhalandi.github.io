@@ -502,6 +502,7 @@ article#rook_sigaret > svg:nth-child(2){
      height:4.4em;
      top:37em;
      width:47em;
+    transform: translate(-20em, 0em);
      z-index: 30;
      fill:#f0edde;
    }
@@ -605,6 +606,7 @@ and (orientation : portrait) {
      top: 33em;
      width: 22.5em;
      fill:#f0edde !important;
+     transform: translate(-20em, -5em);
    }
 
 }
