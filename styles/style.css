@@ -328,6 +328,7 @@ article#hoed > svg{
 
 .anders{
   animation: koppijn 3s linear ;
+  z-index: 4;
 }
 
 @keyframes koppijn {
