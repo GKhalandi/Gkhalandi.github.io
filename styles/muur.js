@@ -16,7 +16,7 @@ document.addEventListener('keydown', function(event){
 
 });
 
-document.addEventListener('click', function(){
+document.addEventListener('mouseover', function(){
   console.log("AUTOLICHTEN");
   storm.classList.toggle('auto');
 
