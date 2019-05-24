@@ -544,8 +544,14 @@ article#rook_sigaret > svg:nth-child(2){
        transform:translateY(0) rotate(0deg);
 
      }
+     40%{
+       transform:translateY(-7em) rotate(-10deg);
+     }
      50%{
-       transform:translateY(-10em) rotate(-2deg);
+       transform:translateY(-10em) rotate(-6deg);
+     }
+     60%{
+       transform:translateY(-7em) rotate(-10deg);
      }
 }
 
