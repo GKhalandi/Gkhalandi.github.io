@@ -1,4 +1,4 @@
-var mtoets = document.querySelector('article#text > svg > g#Modiano > path#_letter_M.cls-6');
+var mtoets = document.querySelector('article#text > svg > g#Modiano > path#_letter_M.cls-13');
 
 var otoets = document.querySelector('article#text > svg > g#Modiano > path#letter_o2.cls-10');
 
@@ -14,16 +14,6 @@ var ntoets = document.querySelector('article#text > svg > g#Modiano > g#letter_N
 
 var madiano = document.querySelector('article#text > svg > g#Modiano');
 
-
-
-
-// M wordt rood
-// mtoets.addEventListener('click', function(){
-//       // if (e.keyCode === 77){
-//           console.log('M wordt rood');
-//           mtoets.classList.toggle('Mtoetsenbord');
-//         // }
-// });
 
 // met dank aan Sanne de docent
 document.addEventListener('keydown', function(event){
