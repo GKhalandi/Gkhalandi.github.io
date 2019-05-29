@@ -78,8 +78,9 @@ svg{
    }
 }
 
+/*
 #Hoedschuiven{
-  animation: omlaag 2s linear 1;
+  animation: omlaag 2s linear;
   cursor: pointer;
 }
 
@@ -92,7 +93,7 @@ svg{
      transform:translateY(0em);
      opacity: 1;
    }
-}
+} */
 
 
 #muur{
@@ -243,7 +244,7 @@ article#text > svg{
 #muur {
   background: #4083b1;
   height: 100vh;
-  width: 60vw;
+  width: 70vw;
   position: absolute;
   z-index: 1;
   right: -50px;
