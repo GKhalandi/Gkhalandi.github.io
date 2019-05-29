@@ -1,7 +1,7 @@
 var hoed = document.querySelector('.Hoed');
 
 // Animatie hoed
-hoed.addEventListener('dblclick', function(){
+hoed.addEventListener('click', function(){
 				console.log("hoedje omhoog");
 	     hoed.classList.toggle('Hoedje');
 });
@@ -9,7 +9,7 @@ hoed.addEventListener('dblclick', function(){
 var hand = document.querySelector('g#Sigaret');
 
 
-hand.addEventListener('dblclick', function() {
+hand.addEventListener('click', function() {
 	console.log('click! hand');
 	hand.classList.toggle('roken');
 });
