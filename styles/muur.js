@@ -1,5 +1,4 @@
-var schuiven = document.querySelector('#muur');
-var storm = document.querySelector('#test');
+var schuiven = document.querySelector('.MUURSCHUIVEN');
 var kutmuur = document.querySelector('#Gekkemuur');
 
 kutmuur.addEventListener('click', function(){
@@ -8,16 +7,8 @@ kutmuur.addEventListener('click', function(){
 
 });
 
-document.addEventListener('keydown', function(event){
-	if (event.code == 'KeyS') {
-    console.log('AUTOLICHTEN');
-	   storm.classList.toggle('auto');
-}
 
-});
-
-storm.addEventListener('dblclick', function(){
-  console.log("AUTOLICHTEN");
-  storm.classList.toggle('auto');
-
-});
+var muur = document.querySelector('.MUURSCHUIVEN');
+	muur.addEventListener('click', function() {
+		console.log('click! muur');
+	});

@@ -4,7 +4,7 @@ var otoets = document.querySelector('article#text > svg > g#Modiano > path#lette
 
 var o2toets = document.querySelector('article#text > svg > g#Modiano > path#letter_O.cls-11');
 
-var dtoets = document.querySelector('article#text > svg > g#Modiano > path#letter_D.cls-7');
+var dtoets = document.querySelector('article#text > svg > g#Modiano > path#letter_D.cls-14');
 
 var itoets = document.querySelector('article#text > svg > g#Modiano > path#letter_I.cls-8');
 

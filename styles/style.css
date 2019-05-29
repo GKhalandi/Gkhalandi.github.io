@@ -78,6 +78,22 @@ svg{
    }
 }
 
+#Hoedschuiven{
+  animation: omlaag 2s linear 1;
+  cursor: pointer;
+}
+
+@keyframes omlaag {
+   0%{
+     transform:translateY(-200em);
+     opacity: 0;
+   }
+   100%{
+     transform:translateY(0em);
+     opacity: 1;
+   }
+}
+
 
 #muur{
   animation: slide-in 2s linear;
@@ -94,6 +110,66 @@ svg{
 }
 }
 
+#Gekkemuur{
+  animation: slide-in 2s linear;
+  cursor:pointer;
+}
+
+@keyframes slide-in {
+  0%{
+    transform: translateX(100em);
+  }
+
+  100% {
+    transform: translateX(0em);
+  }
+}
+}
+
+#Sigaret{
+  cursor:pointer;
+}
+
+.roken {
+  animation: omhoog 1.8s linear;
+}
+
+@keyframes omhoog {
+  0% 100%{
+    transform:translateY(0) rotate(0deg);
+
+  }
+  40%{
+    transform:translateY(-80em);
+  }
+  50%{
+    transform:translateY(-90em);
+  }
+  60%{
+    transform:translateY(-80em);
+  }
+}
+
+#Hoed{
+  cursor:pointer;
+}
+
+.Hoedje{
+  animation: koppijn 1s linear ;
+  z-index: 4;
+}
+
+@keyframes koppijn {
+  0% 100%{
+    transform:translateY(0em);
+    z-index:4;
+  }
+   50%{
+     transform:translateY(-20em);
+     z-index:4;
+   }
+
+}
 
 
 
