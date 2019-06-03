@@ -53,20 +53,8 @@ main {
 
 /* Inladen */
 
-svg{
+/* svg{
   animation: inladen 2.5s linear 1;
-  &:nth-child(1) {
-    animation-delay: 0.3s;
-  }
-  &:nth-child(2) {
-    animation-delay: 0.6s;
-  }
-  &:nth-child(3) {
-    animation-delay: 0.9s;
-  }
-  &:nth-child(4) {
-    animation-delay: 1.1s;
-  }
 }
 
 @keyframes inladen {
@@ -76,7 +64,7 @@ svg{
    100%{
      opacity: 1;
    }
-}
+} */
 
 /*
 #Hoedschuiven{
@@ -96,8 +84,9 @@ svg{
 } */
 
 
+
 #muur{
-  animation: slide-in 2s linear;
+  animation: slide-in 3s linear;
 }
 
 @keyframes slide-in {
@@ -111,21 +100,6 @@ svg{
 }
 }
 
-#Gekkemuur{
-  animation: slide-in 2s linear;
-  cursor:pointer;
-}
-
-@keyframes slide-in {
-  0%{
-    transform: translateX(100em);
-  }
-
-  100% {
-    transform: translateX(0em);
-  }
-}
-}
 
 #Sigaret{
   cursor:pointer;
@@ -176,14 +150,15 @@ svg{
 
 /* TELEFOON */
 
-svg {
+svg#schuiven {
   position: absolute;
   top: 0;
 }
 
+/* Bron: Niels Evers */
+
 article#text > svg{
    height:3em;
-   fill:#f0edde !important;
    z-index: 10;
    top:60vh;
    position: absolute;
@@ -192,59 +167,65 @@ article#text > svg{
    margin-right: auto;
  }
 
-.cls-7,  .cls-8,  .cls-9 {
+.cls-8,  .cls-9,  .cls-10,  .cls-11,  .cls-12,  .cls-13,  .cls-14{
    fill:#f0edde !important;
+   transition: 1.2s;
+   transition-timing-function: ease;
  }
 
 /* TOETSENBORD */
 /* Bron: janne jansen */
 
 .Mtoetsenbord{
-    fill:Pink;
+    opacity: 0;
     transition: 1.2s;
     transition-timing-function: ease-in;
     }
 
 .Otoetsenbord{
-    fill:Pink;
+    opacity:0;
     transition: 1.2s;
     transition-timing-function: ease-in;
 }
 
 .O2toetsenbord{
-  fill:Pink;
+  opacity: 0;
   transition: 1.2s;
   transition-timing-function: ease-in;
 }
 
 .Dtoetsenbord{
-    fill:Pink !important;
+    opacity:0;
     transition: 1.2s;
     transition-timing-function: ease-in;
 }
 
 .Itoetsenbord{
-  fill:Pink !important;
+  opacity:0 !important;
   transition: 1.2s;
   transition-timing-function: ease-in;
 }
 
 .Atoetsenbord{
-  fill:Pink !important;
+  opacity: 0 !important;
   transition: 1.2s;
   transition-timing-function: ease-in;
 }
 .Ntoetsenbord{
-  fill:Pink;
+  opacity: 0;
   transition: 1.2s;
   transition-timing-function: ease-in;
 }
 
+
+
+
 /* MUUUR */
 #muur {
+  cursor:pointer;
   background: #4083b1;
   height: 100vh;
-  width: 70vw;
+  width: 60vw;
   position: absolute;
   z-index: 1;
   right: -50px;
@@ -254,17 +235,31 @@ article#text > svg{
 
 /* Tablet */
 @media (min-width: 768px) {
-  svg {
+
+  svg#schuiven {
     width: 60vw;
+    transition-duration: 2s;
+    transition-timing-function: ease;
   }
+
+  svg#schuiven:hover{
+    transform: translateX(40vw);
+  }
+
+
+
  #muur {
    width: 55vw;
  }
+
+
 
  article#text > svg{
    height:4em;
    top:90vh;
    left:15vw;
+   transition: 1.2s;
+   transition-timing-function: ease;
 
   }
 }
@@ -272,9 +267,10 @@ article#text > svg{
 
 /* Dektop */
 @media (min-width: 1000px) {
-  svg {
+  svg#schuiven {
     width: 45vw;
   }
+
   #muur {
     width: 52.5vw;
     height:100vh;
@@ -283,5 +279,7 @@ article#text > svg{
   article#text > svg{
     top:90vh;
     left:24vw;
+    transition: 1.2s;
+    transition-timing-function: ease;
    }
 }

@@ -1,14 +1,8 @@
-var schuiven = document.querySelector('.MUURSCHUIVEN');
-var kutmuur = document.querySelector('#Gekkemuur');
 
-kutmuur.addEventListener('click', function(){
+var muur_click = document.querySelector('#muur');
+
+muur_click.addEventListener('click', function(){
     console.log("muur schuift weg");
-      schuiven.classList.toggle('weg');
+      muur_click.classList.toggle('weg');
 
 });
-
-
-var muur = document.querySelector('.MUURSCHUIVEN');
-	muur.addEventListener('click', function() {
-		console.log('click! muur');
-	});
