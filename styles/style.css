@@ -29,6 +29,7 @@ Developer Mozilla
 https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event
 https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
 https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 
 Anders
@@ -37,6 +38,7 @@ https://cubic-bezier.com/#.01,-0.46,.71,1.47
 https://www.gradient-animator.com/
 http://keycode.info/
 https://javascript.info/keyboard-events
+https://www.colorhexa.com/
 
  */
 
@@ -230,22 +232,42 @@ article#text > svg{
   z-index: 1;
   right: -50px;
   transform: skew(-7deg);
+  transition: 1s;
+  ransition-timing-function: ease-in;
 }
+
+#muur:hover{
+  background:#2a1c18;
+}
+
+path.cls-1{
+  fill:#2a1c18;
+  transition: 1s;
+  ransition-timing-function: ease-in;
+}
+
+path.cls-1:hover{
+  fill:#4083b1;
+}
+
+circle.cls-5{
+  fill:#fff;
+  transition: 1s;
+  ransition-timing-function: ease-in;
+}
+
+circle.cls-5:hover{
+  fill:#ff0000;
+}
+
 
 
 /* Tablet */
 @media (min-width: 768px) {
 
-  svg#schuiven {
+  svg {
     width: 60vw;
-    transition-duration: 2s;
-    transition-timing-function: ease;
   }
-
-  svg#schuiven:hover{
-    transform: translateX(40vw);
-  }
-
 
 
  #muur {
@@ -278,7 +300,7 @@ article#text > svg{
 
   article#text > svg{
     top:90vh;
-    left:24vw;
+    left:15vw;
     transition: 1.2s;
     transition-timing-function: ease;
    }
