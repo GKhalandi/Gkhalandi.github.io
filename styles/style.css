@@ -46,6 +46,7 @@ https://www.colorhexa.com/
 
 body {
   background: #a64624;
+  overflow:hidden;
 }
 
 main {
@@ -154,7 +155,7 @@ main {
 
 svg#schuiven {
   position: absolute;
-  top: 0;
+  top: 49px;
 }
 
 /* Bron: Niels Evers */
@@ -162,7 +163,7 @@ svg#schuiven {
 article#text > svg{
    height:3em;
    z-index: 10;
-   top:60vh;
+   top: 90vh;
    position: absolute;
    cursor: pointer;
    margin-left: :auto;
@@ -250,14 +251,6 @@ path.cls-1:hover{
   fill:#4083b1;
 }
 
-circle.cls-5{
-  fill:#fff;
-  transition: 1s;
-  ransition-timing-function: ease-in;
-}
-
-circle.cls-5:hover{
-  fill:#ff0000;
 }
 
 
@@ -304,4 +297,8 @@ circle.cls-5:hover{
     transition: 1.2s;
     transition-timing-function: ease;
    }
+}
+
+#Rook_wit:hover{
+  opacity:0.7;
 }
